@@ -1,0 +1,17 @@
+---
+import Search from "astro-pagefind/components/Search";
+---
+
+<div class="mb-6 mt-6 block lg:mb-10">
+    <Search
+        id="search"
+        className="pagefind-ui font-sans"
+        uiOptions={{ showImages: false }}
+    />
+</div>
+
+<style>
+    div {
+        --pagefind-ui-border-radius: 1px;
+    }
+</style>

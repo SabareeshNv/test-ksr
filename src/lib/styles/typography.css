@@ -1,0 +1,70 @@
+@reference "./tailwind.css";
+
+.typography {
+    @apply prose prose-lg lg:prose-xl text-gray-900 marker:text-gray-900;
+    @apply prose-headings:text-xl lg:prose-headings:text-2xl xl:prose-headings:text-3xl;
+    @apply prose-a:underline prose-a:underline-offset-4 prose-a:decoration-2 prose-a:text-brand;
+
+    max-width: 75ch;
+    overflow-wrap: break-word;
+    /* So long texts don't cause overflow */
+    word-spacing: 0.1rem;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-bottom: 0.75rem;
+        font-weight: bold;
+        line-height: 1.25;
+        text-wrap: pretty;
+        word-spacing: 0.05rem;
+    }
+
+    blockquote {
+        border-inline-start: 4px solid #000000e6;
+        font-style: normal;
+        @apply bg-gray-200 px-4 py-1 shadow-sm md:mx-2 lg:mx-4;
+
+        p {
+
+            &:first-of-type::before,
+            &:last-of-type::after {
+                content: none;
+            }
+        }
+    }
+
+    img {
+        width: 100%;
+    }
+
+    figure img {
+        margin-bottom: 0rem;
+    }
+
+    figure figcaption {
+        margin-top: 0.5rem;
+    }
+
+    table {
+
+        td,
+        th {
+            @apply border border-gray-300 p-2;
+        }
+
+        th {
+            @apply text-2xl lg:text-3xl;
+        }
+
+        tr:nth-child(even) {
+            @apply bg-gray-200;
+        }
+
+    }
+
+
+}

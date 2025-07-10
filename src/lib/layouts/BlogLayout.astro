@@ -1,0 +1,49 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { Image } from "astro:assets";
+import "@styles/typography.css";
+
+import BaseLayout from "./BaseLayout.astro";
+import Hero from "../components/Hero.astro";
+import SearchField from "../components/SearchField.astro";
+import TagCloud from "../components/TagCloud.astro";
+import PopularPosts from "../components/PopularPosts.astro";
+
+type Props = CollectionEntry<"article">["data"];
+const { title, malayalamTitle, description, pubDate, coverImage, coverAlt } =
+    Astro.props;
+
+const titleSEO = `${title} | KeralaServiceRules.com`;
+const descSEO = `${description} | KeralaServiceRules.com`;
+---
+
+<BaseLayout title={titleSEO} description={descSEO}>
+    <main data-pagefind-body>
+        <section class="wrapper page-columns mt-4">
+            <div>
+                <Hero {title} {malayalamTitle} {pubDate} />
+                <Image
+                    src={coverImage}
+                    alt={coverAlt}
+                    loading={"eager"}
+                    fetchpriority={"high"}
+                    decoding={"sync"}
+                    quality={"max"}
+                    class="mt-4 w-full rounded shadow"
+                />
+            </div>
+        </section>
+        <div class="wrapper page-columns my-6">
+            <article class="grid">
+                <div class="typography font-manjari">
+                    <slot />
+                </div>
+            </article>
+            <aside data-pagefind-ignore="all">
+                <SearchField />
+                <PopularPosts />
+                <TagCloud />
+            </aside>
+        </div>
+    </main>
+</BaseLayout>

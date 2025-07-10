@@ -1,0 +1,36 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import Card from "@components/Card.astro";
+import SearchField from "@components/SearchField.astro";
+import TagCloud from "@components/TagCloud.astro";
+import UsefulLinks from "@components/UsefulLinks.astro";
+import PopularPosts from "@components/PopularPosts.astro";
+import { fetchAndFilterPosts } from "@utils/helper";
+
+const posts = await fetchAndFilterPosts();
+
+const title =
+    "കേരളാ സർവീസ് ചട്ടങ്ങൾ ലളിതമായ മലയാളത്തിൽ | KSR in simple Malayalam language | KeralaServiceRules.com";
+const description =
+    "കേരളാ സർവീസ് ചട്ടങ്ങൾ ലളിതമായി മനസിലാവുന്ന മലയാളത്തിൽ . Kerala Service Rules (KSR) in simple malayalam. PDF download";
+---
+
+<BaseLayout {title} {description}>
+    <div class="wrapper page-columns my-8">
+        <main class="auto-grid">
+            {
+                /* First 2 images should not be lazy loaded to please Google */
+                posts
+                    .slice(0, 2)
+                    .map((post) => <Card {post} aboveFold={true} />)
+            }
+            {posts.slice(2).map((post) => <Card {post} />)}
+        </main>
+        <aside>
+            <SearchField />
+            <UsefulLinks />
+            <PopularPosts />
+            <TagCloud />
+        </aside>
+    </div>
+</BaseLayout>

@@ -1,0 +1,53 @@
+---
+interface Props {
+    title: string;
+    description: string;
+}
+
+import "@styles/tailwind.css";
+// Alegreya Sans Font
+import "@fontsource/alegreya-sans/400.css";
+import "@fontsource/alegreya-sans/400-italic.css";
+import "@fontsource/alegreya-sans/700.css";
+
+const { title, description } = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+{/* Primary Meta Tags */}
+<title>{title}</title>
+<meta name="title" content={title} />
+<meta name="description" content={description} />
+
+{/* Canonical URL */}
+<link rel="canonical" href={canonicalURL} />
+
+{/* OG Metadata - Facebook and others use it */}
+<meta property="og:type" content="website" />
+<meta property="og:url" content={Astro.url} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+
+{/* Twitter metadata */}
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content={Astro.url} />
+<meta property="twitter:title" content={title} />
+<meta property="twitter:description" content={description} />
+
+<!-- {/* Sitemap link */}
+<link rel="sitemap" href="/sitemap-index.xml" />
+
+{/* Robots.txt equivalent */}
+<meta name="robots" content="index,follow" />
+
+{/* For RSS Autodiscovery - https://docs.astro.build/en/guides/rss/  */}
+<link
+    rel="alternate"
+    type="application/rss+xml"
+    title="കേരളാ സർവീസ് ചട്ടങ്ങൾ ലളിതമായ മലയാളത്തിൽ | KSR in simple Malayalam language | KeralaServiceRules.com"
+    href={new URL("rss.xml", Astro.site)}
+/> -->

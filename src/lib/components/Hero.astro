@@ -1,0 +1,13 @@
+---
+import Date from "./Date.astro";
+
+const { title, malayalamTitle, pubDate } = Astro.props;
+---
+
+<section class="mt-4">
+  <Date date={pubDate} class="mb-4 lg:text-lg italic" />
+  <h1 class="text-3xl lg:text-4xl font-bold mb-2">
+    {title}
+  </h1>
+  <span class="font-manjari text-2xl lg:text-3xl">{malayalamTitle}</span>
+</section>

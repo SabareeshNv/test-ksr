@@ -1,0 +1,27 @@
+---
+const usefulLinks = [
+    { text: "Govt. of Kerala Website", link: "https://kerala.gov.in/" },
+    {
+        text: "Departmental Test Website",
+        link: "https://www.keralapsc.gov.in/departmental-test",
+    },
+    { text: "Kerala PSC Website", link: "https://www.keralapsc.gov.in/" },
+    { text: "Spark Website", link: "https://www.spark.gov.in/webspark/" },
+    { text: "Medisep Website", link: "https://medisep.kerala.gov.in/" },
+];
+---
+
+<div class="mb-8">
+    <div class="text-3xl font-medium italic section-heading">Useful Links</div>
+    <ul class="mt-4 list-disc pl-6">
+        {
+            usefulLinks.map((item) => (
+                <li class="pb-4">
+                    <a href={`${item.link}`} class="text-lg hover:underline">
+                        {item.text}
+                    </a>
+                </li>
+            ))
+        }
+    </ul>
+</div>

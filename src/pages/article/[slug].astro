@@ -1,0 +1,22 @@
+---
+import { type CollectionEntry, render } from "astro:content";
+
+import BlogLayout from "@layouts/BlogLayout.astro";
+import { fetchAndFilterPosts } from "@utils/helper";
+
+export async function getStaticPaths() {
+    const posts = await fetchAndFilterPosts();
+    return posts.map((post) => ({
+        params: { slug: post.id },
+        props: post,
+    }));
+}
+
+type Props = CollectionEntry<"article">;
+const post = Astro.props;
+const { Content } = await render(post);
+---
+
+<BlogLayout {...post.data}>
+    <Content />
+</BlogLayout>

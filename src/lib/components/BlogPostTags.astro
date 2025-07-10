@@ -1,0 +1,20 @@
+---
+import { slugify } from "@utils/helper";
+
+const { tags } = Astro.props;
+---
+
+<div>
+    <div class="flex flex-wrap gap-2">
+        {
+            tags.map((tag: string) => (
+                <a
+                    href={`/tag/${slugify(tag)}`}
+                    class="rounded bg-gray-100 p-2 hover:bg-gray-200"
+                >
+                    #{tag}
+                </a>
+            ))
+        }
+    </div>
+</div>

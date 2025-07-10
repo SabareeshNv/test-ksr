@@ -1,0 +1,35 @@
+---
+const footer = [
+    { text: "Privacy Policy", link: "/privacy-policy" },
+    { text: "RSS Feed", link: "/rss.xml" },
+    { text: "Content Policy", link: "/content-policy" },
+];
+
+function getCurrentYear() {
+    return new Date().getFullYear();
+}
+---
+
+<footer class="bg-dark pt-12 pb-8 text-gray-100">
+    <div class="wrapper grid gap-6 md:gap-2 md:grid-cols-3">
+        <ul
+            class="md:col-span-2 flex items-center justify-evenly md:justify-normal gap-6 md:gap-8"
+        >
+            {
+                footer.map((item) => (
+                    <li>
+                        <a
+                            href={item.link}
+                            class="hover:text-brand transition-colors"
+                        >
+                            {item.text}
+                        </a>
+                    </li>
+                ))
+            }
+        </ul>
+        <div class="text-center md:text-right">
+            Copyright © 2020 - {getCurrentYear}
+        </div>
+    </div>
+</footer>
