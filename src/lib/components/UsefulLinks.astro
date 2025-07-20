@@ -9,10 +9,12 @@ const usefulLinks = [
     { text: "Spark Website", link: "https://www.spark.gov.in/webspark/" },
     { text: "Medisep Website", link: "https://medisep.kerala.gov.in/" },
 ];
+
+import SectionHeading from "./SectionHeading.astro";
 ---
 
 <div class="mb-8">
-    <div class="text-3xl font-medium italic section-heading">Useful Links</div>
+    <SectionHeading heading="Useful Websites" />
     <ul class="mt-4 list-disc pl-6">
         {
             usefulLinks.map((item) => (
@@ -25,3 +27,24 @@ const usefulLinks = [
         }
     </ul>
 </div>
+
+<style>
+    .test {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+    .useful {
+        display: inline-block;
+    }
+
+    hr {
+        flex-grow: 1; /* makes the <hr> expand */
+        height: 2px; /* or however thick you want */
+        background-color: black; /* the visible line color */
+    }
+</style>

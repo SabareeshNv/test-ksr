@@ -12,7 +12,7 @@ const { title, pubDate, summary, coverImage, coverAlt } = post.data;
             >{title}</a
         >
     </h2>
-    <Date date={pubDate} class="lg:text-lg mt-2 italic" />
+    <Date date={pubDate} class="lg:text-lg mt-2" />
     <div class="mt-2">
         <a href={`/article/${post.id}/`}>
             {
@@ -23,14 +23,10 @@ const { title, pubDate, summary, coverImage, coverAlt } = post.data;
                         loading={"eager"}
                         fetchpriority={"high"}
                         decoding={"sync"}
-                        class="w-full rounded-sm"
+                        class="shadow-sm"
                     />
                 ) : (
-                    <Image
-                        src={coverImage}
-                        alt={coverAlt}
-                        class="w-full rounded-sm"
-                    />
+                    <Image src={coverImage} alt={coverAlt} class="shadow-sm" />
                 )
             }
         </a>

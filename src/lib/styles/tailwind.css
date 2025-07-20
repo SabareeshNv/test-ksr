@@ -71,20 +71,6 @@ img {
         "pres" off;
 }
 
-.section-heading {
-    display: flex;
-    align-items: center;
-}
-
-.section-heading::after {
-    content: "";
-    flex: 1;
-    margin-left: 1rem;
-    height: 2px;
-    background-color: #1c1917;
-    @apply bg-gray-900;
-}
-
 .heading::after {
     content: "";
     display: block;

@@ -1,5 +1,6 @@
 ---
 import { fetchAndFilterPosts } from "@utils/helper";
+import SectionHeading from "./SectionHeading.astro";
 
 const posts = await fetchAndFilterPosts();
 const popularPosts = [];
@@ -11,9 +12,7 @@ for (let i = 0; i < posts.length; i++) {
 ---
 
 <div class="mb-8">
-    <div class="text-3xl font-medium italic section-heading mb-4">
-        Popular Posts
-    </div>
+    <SectionHeading heading="Popular Posts" />
     <ul class="mt-4 list-disc pl-6">
         {
             popularPosts.map((post) => (
