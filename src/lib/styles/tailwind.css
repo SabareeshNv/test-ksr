@@ -71,34 +71,6 @@ img {
         "pres" off;
 }
 
-.heading::after {
-    content: "";
-    display: block;
-    margin-top: 3px;
-    width: clamp(2em, 25%, 4em);
-    height: 3px;
-    @apply bg-brand;
-}
-
-.hr {
-    display: flex;
-    align-items: center;
-}
-
-.hr::after {
-    content: "";
-    flex: 1;
-    margin-left: 1rem;
-    height: 2px;
-    background-color: #1c1917;
-    @apply bg-brand;
-}
-
-.vline {
-    border-left: 1px solid;
-    padding-left: 1rem;
-}
-
 .page-columns {
     display: grid;
     gap: 2rem;
@@ -114,7 +86,16 @@ img {
     display: grid;
     row-gap: 5rem;
     column-gap: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.heading::after {
+    content: "";
+    display: block;
+    margin-top: 3px;
+    width: clamp(2em, 25%, 4em);
+    height: 3px;
+    @apply bg-dark;
 }
 
 @theme {

@@ -1,16 +1,20 @@
 ---
+import SectionHeading from "./SectionHeading.astro";
+
 const usefulLinks = [
     { text: "Govt. of Kerala Website", link: "https://kerala.gov.in/" },
+    { text: "Spark Website", link: "https://www.spark.gov.in/webspark/" },
+    { text: "Medisep Website", link: "https://medisep.kerala.gov.in/" },
+    { text: "Kerala PSC Website", link: "https://www.keralapsc.gov.in/" },
     {
         text: "Departmental Test Website",
         link: "https://www.keralapsc.gov.in/departmental-test",
     },
-    { text: "Kerala PSC Website", link: "https://www.keralapsc.gov.in/" },
-    { text: "Spark Website", link: "https://www.spark.gov.in/webspark/" },
-    { text: "Medisep Website", link: "https://medisep.kerala.gov.in/" },
+    {
+        text: "Kerala PSC Thulasi",
+        link: "https://thulasi.psc.kerala.gov.in/thulasi/",
+    },
 ];
-
-import SectionHeading from "./SectionHeading.astro";
 ---
 
 <div class="mb-8">
@@ -19,7 +23,12 @@ import SectionHeading from "./SectionHeading.astro";
         {
             usefulLinks.map((item) => (
                 <li class="pb-4">
-                    <a href={`${item.link}`} class="text-lg hover:underline">
+                    <a
+                        href={`${item.link}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-lg hover:underline"
+                    >
                         {item.text}
                     </a>
                 </li>

@@ -23,10 +23,10 @@ const { title, pubDate, summary, coverImage, coverAlt } = post.data;
                         loading={"eager"}
                         fetchpriority={"high"}
                         decoding={"sync"}
-                        class="shadow-sm"
+                        class="shadow"
                     />
                 ) : (
-                    <Image src={coverImage} alt={coverAlt} class="shadow-sm" />
+                    <Image src={coverImage} alt={coverAlt} class="shadow" />
                 )
             }
         </a>

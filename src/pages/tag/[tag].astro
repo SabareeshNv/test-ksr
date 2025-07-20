@@ -1,0 +1,62 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import Card from "@components/Card.astro";
+import SearchField from "@components/SearchField.astro";
+import TagCloud from "@components/TagCloud.astro";
+
+import { fetchAndFilterPosts, generateTagData, unslugify } from "@utils/helper";
+
+export async function getStaticPaths() {
+    const posts = await fetchAndFilterPosts();
+
+    const uniqueTags = [
+        ...new Set(posts.flatMap((post) => post.data.tags)),
+    ] as string[];
+
+    const tagData: { name: string; slug: string }[] =
+        generateTagData(uniqueTags);
+
+    return tagData.map((tag) => {
+        const taggedPosts = posts.filter((post) =>
+            post.data.tags.includes(tag.name),
+        );
+
+        return {
+            params: { tag: tag.slug },
+            props: { posts: taggedPosts },
+        };
+    });
+}
+
+const { tag } = Astro.params;
+const { posts } = Astro.props;
+
+const title = `Articles about ${unslugify(tag)} | KeralaServiceRules.com`;
+const description = `Articles about ${tag} | KeralaServiceRules.com`;
+---
+
+<BaseLayout {title} {description}>
+    <div class="wrapper page-columns my-8">
+        <main>
+            <h1 class="heading text-2xl lg:text-3xl italic">
+                Articles about
+                <span class="font-bold text-brand not-italic"
+                    >&nbsp; {`" ${unslugify(tag)} "`}</span
+                >
+            </h1>
+
+            <div class="mt-12 auto-grid">
+                {
+                    posts
+                        .slice(0, 2)
+                        .map((post) => <Card {post} aboveFold={true} />)
+                }
+                {posts.slice(2).map((post) => <Card {post} />)}
+            </div>
+        </main>
+        <aside>
+            <SearchField />
+            <TagCloud />
+        </aside>
+    </div>
+</BaseLayout>
