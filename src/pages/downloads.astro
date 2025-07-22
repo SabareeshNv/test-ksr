@@ -1,5 +1,22 @@
 ---
 import BaseLayout from "@layouts/BaseLayout.astro";
+import SearchField from "@components/SearchField.astro";
+import TagCloud from "@components/TagCloud.astro";
+import UsefulLinks from "@components/UsefulLinks.astro";
+import PopularPosts from "@components/PopularPosts.astro";
+
+const ksrDownload = [
+    {
+        slNo: "1",
+        ksrVolume: "Kerala Service Rules Volume 1 - 8th Edition",
+        downloadLink: "/ksr/ksr-volume1-8th-edition.pdf",
+    },
+    {
+        slNo: "2",
+        ksrVolume: "Kerala Service Rules Volume 2 - 6th Edition",
+        downloadLink: "/ksr/ksr-volume2-6th-edition.pdf",
+    },
+];
 
 const title =
     "Download KSR (Kerala Service Rules) PDF | Kerala Service Rules in Malayalam | KeralaServiceRules.com";
@@ -10,35 +27,54 @@ const description =
 <BaseLayout {title} {description}>
     <div class="wrapper page-columns my-8">
         <main>
-            <h1 class="text-3xl">
-                Download Kerala Service Rules PDF from below.
+            <h1 class="text-2xl mb-6">
+                Download Kerala Service Rules PDFs from below.
             </h1>
-            <table class="table-auto md:table-fixed mt-8 text-left">
-                <thead class="uppercase text-xl">
+            <table class="table-auto">
+                <caption class="caption-bottom mt-6 text-lg">
+                    <p class="text-left">
+                        All the files provided here are not the original work of
+                        us and are published by Kerala Finance Department. We
+                        provide the respective files as is, for better access to
+                        the public and as a helpful resource.
+                    </p>
+                </caption>
+                <thead class="uppercase text-lg">
                     <tr>
-                        <th class="px-6 py-3">Sl No</th>
-                        <th class="px-6 py-3">Book Edition</th>
-                        <th class="px-6 py-3">Download</th>
+                        <th class="p-4 border border-gray-300">Sl No</th>
+                        <th class="p-4 border border-gray-300">Book Edition</th>
+                        <th class="p-4 border border-gray-300"></th>
                     </tr>
                 </thead>
                 <tbody class="text-xl">
-                    <tr class="">
-                        <td class="px-6 py-4">1</td>
-                        <td class="px-6 py-4"
-                            >Kerala Service Rules Volume 1 - 8th Edition</td
-                        >
-                        <td class="px-6 py-4">Dowload from Here</td>
-                    </tr>
-                    <tr>
-                        <td class="px-6 py-4">2</td>
-                        <td class="px-6 py-4"
-                            >Kerala Service Rules Volume 2 - 6th Edition</td
-                        >
-                        <td class="px-6 py-4">Dowload from Here</td>
-                    </tr>
+                    {
+                        ksrDownload.map((item) => (
+                            <tr>
+                                <td class="p-4 border border-gray-300">
+                                    {item.slNo}
+                                </td>
+                                <td class="p-4 border border-gray-300">
+                                    {item.ksrVolume}
+                                </td>
+                                <td class="p-4 border border-gray-300">
+                                    <a
+                                        href={item.downloadLink}
+                                        class="font-bold text-brand"
+                                    >
+                                        Dowload
+                                    </a>
+                                </td>
+                            </tr>
+                        ))
+                    }
                 </tbody>
             </table>
         </main>
-        <aside></aside>
+        <aside>
+            <SearchField />
+            <UsefulLinks />
+            <PopularPosts />
+            <TagCloud />
+        </aside>
     </div>
 </BaseLayout>

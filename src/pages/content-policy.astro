@@ -1,0 +1,58 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import "@styles/typography.css";
+
+const title = "Our Content Policy | KeralaServiceRules.com";
+const description =
+    "This web page lists all the policies regarding our written content or any other materials | KeralaServiceRules.com";
+---
+
+<BaseLayout {title} {description}>
+    <main class="wrapper my-8">
+        <div class="typography mx-auto">
+            <h1 class="mb-10">Our Content Policy</h1>
+            <h2>Disclaimer</h2>
+            <p>
+                This website is not an official website of any Government,
+                Public Sector or other such undertaking of Kerala Government.
+                This website is intented to provide information to a Kerala Govt
+                employees about Kerala Service Rules. All contents are obtained
+                from various websites, from other social platforms and from
+                other various freely available sources.
+                <b>
+                    <a href="/" class="text-brand underline underline-offset-4"
+                        >KeralaServiceRules.com</a
+                    >
+                </b>
+                accepts no responsibility in relation to the accuracy, completeness,
+                usefulness or otherwise, of the contents. Hence users are advised
+                to verify the information with the relevant Government department(s)
+                and/or other source(s), and to obtain any appropriate professional
+                advice before acting on the information provided in the website.
+            </p>
+
+            <blockquote>
+                <p>
+                    AI tools such as ChatGPT, Google Gemini, NotebookLm etc are
+                    used for research purpose. But the final article is always
+                    fact checked and verified for authenticity by a human.
+                </p>
+                <p>
+                    The use of AI is for simplifying the writing process as well
+                    as to reduce research time.
+                </p>
+            </blockquote>
+
+            <p>
+                At many places in this website, you shall find links to other
+                websites/portals. These links have been placed for your
+                convenience. <a
+                    href="/"
+                    class="text-brand underline underline-offset-4"
+                    >KeralaServiceRules.com</a
+                > is not responsible for the contents and reliability of the linked
+                websites.
+            </p>
+        </div>
+    </main>
+</BaseLayout>
