@@ -17,7 +17,7 @@ const usefulLinks = [
 ];
 ---
 
-<div class="mb-8">
+<section class="mb-8">
     <SectionHeading heading="Useful Websites" />
     <ul class="mt-4 list-disc pl-6">
         {
@@ -35,25 +35,4 @@ const usefulLinks = [
             ))
         }
     </ul>
-</div>
-
-<style>
-    .test {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-
-        align-items: center;
-        justify-content: center;
-    }
-
-    .useful {
-        display: inline-block;
-    }
-
-    hr {
-        flex-grow: 1; /* makes the <hr> expand */
-        height: 2px; /* or however thick you want */
-        background-color: black; /* the visible line color */
-    }
-</style>
+</section>

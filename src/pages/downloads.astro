@@ -31,7 +31,9 @@ const description =
                 Download Kerala Service Rules PDFs from here.
             </h1>
             <table class="table-auto">
-                <caption class="caption-bottom mt-6 text-lg">
+                <caption
+                    class="mt-6 md:mt-8 lg:mt-12 text-lg lg:text-xl caption-bottom"
+                >
                     <p class="text-left [word-spacing:0.1rem]">
                         All the files provided here are not the original work of
                         us and are published by Kerala Finance Department. We
@@ -43,30 +45,41 @@ const description =
                     <tr>
                         <th class="p-4 border border-gray-300">Sl No</th>
                         <th class="p-4 border border-gray-300">Book Edition</th>
-                        <th class="p-4 border border-gray-300"></th>
+                        <th class="p-4 border border-gray-300">Link</th>
                     </tr>
                 </thead>
-                <tbody class="text-xl">
-                    {
-                        ksrDownload.map((item) => (
-                            <tr>
-                                <td class="p-4 border border-gray-300">
-                                    {item.slNo}
-                                </td>
-                                <td class="p-4 border border-gray-300">
-                                    {item.ksrVolume}
-                                </td>
-                                <td class="p-4 border border-gray-300">
-                                    <a
-                                        href={item.downloadLink}
-                                        class="font-bold text-brand"
-                                    >
-                                        Dowload
-                                    </a>
-                                </td>
-                            </tr>
-                        ))
-                    }
+                <tbody class="text-xl lg:text-2xl">
+                    <tr>
+                        <td class="p-4 border border-gray-300"> 1 </td>
+                        <td class="p-4 border border-gray-300">
+                            Kerala Service Rules Volume 1 - 8th Edition
+                            <span class="block mt-2 text-lg lg:text-xl"
+                                >(Includes both Part 1 and Part 2 of KSR)</span
+                            >
+                        </td>
+                        <td class="p-4 border border-gray-300">
+                            <a
+                                href="/ksr/ksr-volume1-8th-edition.pdf"
+                                class="font-bold text-brand"
+                            >
+                                Dowload
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="p-4 border border-gray-300"> 2 </td>
+                        <td class="p-4 border border-gray-300">
+                            Kerala Service Rules Volume 2 - 6th Edition
+                        </td>
+                        <td class="p-4 border border-gray-300">
+                            <a
+                                href="/ksr/ksr-volume2-6th-edition.pdf"
+                                class="font-bold text-brand"
+                            >
+                                Dowload
+                            </a>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
         </main>

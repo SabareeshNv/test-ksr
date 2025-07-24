@@ -4,14 +4,22 @@ import { Image } from "astro:assets";
 import "@styles/typography.css";
 
 import BaseLayout from "./BaseLayout.astro";
-import Hero from "../components/Hero.astro";
-import SearchField from "../components/SearchField.astro";
-import TagCloud from "../components/TagCloud.astro";
-import PopularPosts from "../components/PopularPosts.astro";
+import Hero from "@components/Hero.astro";
+import BlogPostTags from "@components/BlogPostTags.astro";
+import SearchField from "@components/SearchField.astro";
+import TagCloud from "@components/TagCloud.astro";
+import PopularPosts from "@components/PopularPosts.astro";
 
 type Props = CollectionEntry<"article">["data"];
-const { title, malayalamTitle, description, pubDate, coverImage, coverAlt } =
-    Astro.props;
+const {
+    title,
+    malayalamTitle,
+    description,
+    pubDate,
+    coverImage,
+    coverAlt,
+    tags,
+} = Astro.props;
 
 const titleSEO = `${title} | KeralaServiceRules.com`;
 const descSEO = `${description} | KeralaServiceRules.com`;
@@ -34,9 +42,10 @@ const descSEO = `${description} | KeralaServiceRules.com`;
             </div>
         </section>
         <div class="wrapper page-columns my-6">
-            <article class="grid">
+            <article>
                 <div class="typography font-manjari">
                     <slot />
+                    <BlogPostTags tags={tags} />
                 </div>
             </article>
             <aside data-pagefind-ignore="all">

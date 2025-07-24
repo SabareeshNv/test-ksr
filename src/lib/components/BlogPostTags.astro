@@ -1,20 +1,22 @@
 ---
+interface Props {
+    tags: string[];
+}
+
 import { slugify } from "@utils/helper";
 
 const { tags } = Astro.props;
 ---
 
-<div>
-    <div class="flex flex-wrap gap-2">
-        {
-            tags.map((tag: string) => (
-                <a
-                    href={`/tag/${slugify(tag)}`}
-                    class="rounded bg-gray-100 p-2 hover:bg-gray-200"
-                >
-                    #{tag}
-                </a>
-            ))
-        }
-    </div>
+<div class="flex flex-wrap gap-4 not-prose mt-6 mb-10">
+    {
+        tags.map((tag) => (
+            <a
+                href={`/tag/${slugify(tag)}`}
+                class="p-2 text-base outline outline-dark rounded hover:bg-dark hover:text-gray-100 hover:outline-gray-100 focus:bg-dark focus:text-gray-100 focus:outline-gray-100 transition-colors"
+            >
+                {tag}
+            </a>
+        ))
+    }
 </div>
