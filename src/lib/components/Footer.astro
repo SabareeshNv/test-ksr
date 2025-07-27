@@ -1,7 +1,7 @@
 ---
 const footer = [
     { text: "Privacy Policy", link: "/privacy-policy" },
-    { text: "RSS Feed", link: "/rss.xml" },
+    { text: "RSS Feed", link: "/feed.xml" },
     { text: "Content Policy", link: "/content-policy" },
 ];
 
@@ -20,7 +20,7 @@ function getCurrentYear() {
                     <li>
                         <a
                             href={item.link}
-                            class="hover:text-brand transition-colors"
+                            class="hover:text-brand-bright transition-colors"
                         >
                             {item.text}
                         </a>

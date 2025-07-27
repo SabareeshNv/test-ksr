@@ -66,5 +66,7 @@
 
     }
 
-
+    .math {
+        @apply text-xl lg:text-2xl;
+    }
 }

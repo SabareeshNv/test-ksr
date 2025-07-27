@@ -4,7 +4,7 @@ import { fetchAndFilterPosts } from "@utils/helper";
 export async function GET(context) {
     const posts = await fetchAndFilterPosts();
     return rss({
-        title: "കേരളാ സർവീസ് ചട്ടങ്ങൾ ലളിതമായ മലയാളത്തിൽ | KSR in simple Malayalam language | KeralaServiceRules.com",
+        title: "Kerala Service Rules - Latest Posts",
         description:
             "Get latest articles published in your beloved KeralaServiceRules.com right inside your favorite RSS reader",
         site: context.site,
