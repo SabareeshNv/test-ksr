@@ -68,11 +68,11 @@
 
     /* For styling fractions in markdown file */
     .math {
-        @apply text-2xl;
+        @apply text-xl lg:text-2xl;
     }
 
     is-fraction {
-        @apply text-2xl;
+        @apply text-xl lg:text-2xl;
     }
 
     /* Fraction styling ends */
