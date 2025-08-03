@@ -2,9 +2,9 @@
 title: Dies Non
 malayalamTitle: ശൂന്യ വേതനം
 description: "Kerala Government rules about Dies Non in malayalam language, കേരള സർക്കാർ ഡയസ് നോൺ നിയമം മലയാളത്തിൽ."
-summary: "ഡയസ് നോൺ നിയമം: കേരള സർക്കാർ ജീവനക്കാർക്ക് ഒരു ഗൈഡ്. ഈ നിയമം ശമ്പളം, അവധി, മറ്റ് ആനുകൂല്യങ്ങൾ എന്നിവ നഷ്ടപ്പെടുത്താൻ ഇടയാക്കും. അങ്ങനെയുള്ള ഈ നിയമത്തെക്കുറിച്ചു ഒരു വിശദീകരണം"
+summary: "ഡയസ് നോൺ നിയമത്തെക്കുറിച്ചും, അത് എങ്ങനെ സമരം ചെയ്യുന്ന ജീവനക്കാരെ ബാധിക്കുന്നുവെന്നും വിശദമാക്കുന്ന ലേഖനം."
 pubDate: "2020-12-24"
-coverImage: "../../assets/images/articles/dies_non/dies_non.png"
+coverImage: "@images/articles/dies_non/dies_non.png"
 coverAlt: "A poster for Dies Non"
 tags: ["Dies Non", "Pension"]
 ---

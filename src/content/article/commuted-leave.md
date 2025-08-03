@@ -4,7 +4,7 @@ malayalamTitle: പരിവർത്തിത അവധി
 description: ഓർഡിനറി ലീവ് ആയ കമ്മ്യൂട്ടഡ് ലീവിനേക്കുറിച്ചു ഒരു ലേഖനം | an article about Commuted Leave in KSR
 summary: "രണ്ടു അർദ്ധ-വേതന അവധിയെ ഒരു മുഴുവൻ ശമ്പള അവധിയായി മാറ്റാൻ അനുവദിക്കുന്ന ചട്ടത്തിനെപ്പറ്റി ഒരു ലേഖനം."
 pubDate: "2021-08-15"
-coverImage: "../../assets/images/articles/commuted_leave/commuted_leave.png"
+coverImage: "@images/articles/commuted_leave/commuted_leave.png"
 coverAlt: "commuted leave"
 tags: ["Ordinary Leave", "Leave"]
 popularPost: true

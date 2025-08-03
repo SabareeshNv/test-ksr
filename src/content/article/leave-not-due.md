@@ -4,7 +4,7 @@ malayalamTitle: മുൻ‌കൂർ അവധി
 description: ഓർഡിനറി ലീവ് ആയ ലീവ് നോട്ട് ഡ്യൂ എന്നതിനേ കുറിച്ച് ഒരു ലേഖനം
 summary: "സ്ഥിരം ജീവനക്കാർക്ക് മുൻകൂട്ടി നൽകുന്ന അർദ്ധ ശമ്പള അവധിയായ 'ലീവ് നോട്ട് ഡ്യൂ' എന്നതിനെക്കുറിച്ചു ഒരു ലേഖനം. യോഗ്യത, അനുവദനീയമായ പരമാവധി ദിവസങ്ങൾ എന്നിവ ഉൾപ്പെടെ മറ്റു വ്യവസ്ഥകളും പ്രതിപാദിക്കുന്നു"
 pubDate: "2021-09-23"
-coverImage: "../../assets/images/articles/leave_not_due/leave_not_due.png"
+coverImage: "@images/articles/leave_not_due/leave_not_due.png"
 coverAlt: "Leave Not Due"
 tags: ["Ordinary Leave", "Leave"]
 ---

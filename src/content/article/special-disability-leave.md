@@ -4,7 +4,7 @@ malayalamTitle: അവശതാവധി
 description: Special disability leave for employees as per KSR of kerala governemnt.
 summary: "ഔദ്യോഗിക ചുമതലകൾ നിമിത്തം അവശത അനുഭവിക്കുന്ന ജീവനക്കാർക്ക് അനുവദിക്കുന്ന അവധിയെക്കുറിച്ചു ഒരു വിശദീകരണം. പരമാവധി ലീവ് ദൈർഘ്യം, മറ്റു ലീവുകളുമായി സംയോജിപ്പിക്കുന്നതിനുള്ള വ്യവസ്ഥകൾ, ശമ്പളം തുടങ്ങിയവയെ കുറിച്ച് വിശദീകരിക്കുന്നു."
 pubDate: "2022-01-19"
-coverImage: "../../assets/images/articles/special_disability_leave/special_disability_leave.png"
+coverImage: "@images/articles/special_disability_leave/special_disability_leave.png"
 coverAlt: "An illustration about Special Disability Leave"
 tags: ["Leave", "Disability"]
 ---

@@ -4,7 +4,7 @@ malayalamTitle: അർദ്ധ വേതന അവധി
 description: ഓർഡിനറി ലീവ് ആയ ഹാഫ് പേ ലീവിനേക്കുറിച്ചു ഒരു ലേഖനം
 summary: "പൂർത്തിയായ ഓരോ വർഷത്തിലും 20 എണ്ണം വീതം ലഭിക്കുന്നതായ അർദ്ധ വേതന അവധിയേകുറിച്ചു ഒരു വിവരണം"
 pubDate: "2021-08-15"
-coverImage: "../../assets/images/articles/half_pay_leave/half_pay_leave.png"
+coverImage: "@images/articles/half_pay_leave/half_pay_leave.png"
 coverAlt: "Half Pay Leave Rules"
 tags: ["Ordinary Leave", "Leave"]
 ---

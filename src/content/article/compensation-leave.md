@@ -4,7 +4,7 @@ malayalamTitle: കോമ്പൻസേഷൻ ലീവ്
 description: Compensation leave is a special type of leave available to Kerala Service member as a compensation for duty done on holidays. Here are some important points to this special leave.
 summary: "അവധി ദിനങ്ങളിൽ ജോലി ചെയ്തതിനുള്ള പ്രതിഫലമായി ഒരു ജീവനക്കാരന് ലഭിക്കുന്ന അവധിയേക്കുറിച്ചു ഒരു ലേഖനം"
 pubDate: "2020-11-21"
-coverImage: "../../assets/images/articles/compensation_leave/compensation_leave.png"
+coverImage: "@images/articles/compensation_leave/compensation_leave.png"
 coverAlt: "Compensation Leave"
 tags: ["Leave"]
 ---

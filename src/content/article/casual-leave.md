@@ -4,7 +4,7 @@ malayalamTitle: "ആകസ്മിക അവധി"
 description: "Casual Leave is one among many types of leave available to a service member. Here are some important information related to Casual Leave."
 summary: "ഈ ലേഖനം കേരള സർക്കാർ ജീവനക്കാർക്കുള്ള കാഷ്വൽ ലീവ് നിയമങ്ങൾ വിവരിക്കുന്നു. ഇത് യോഗ്യത, പരമാവധി അവധി ദിവസങ്ങൾ, നടപടിക്രമ മാർഗ്ഗനിർദ്ദേശങ്ങൾ, അവധി അനുവദിക്കുന്നതിൽ അധികാരികളുടെ പങ്ക് എന്നിവ വിശദമാക്കുന്നു."
 pubDate: "2020-11-01"
-coverImage: "../../assets/images/articles/casual_leave/casual_leave.png"
+coverImage: "@images/articles/casual_leave/casual_leave.png"
 coverAlt: "casual leave"
 tags: ["Leave"]
 ---

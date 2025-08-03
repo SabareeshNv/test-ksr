@@ -57,7 +57,7 @@
         }
 
         th {
-            @apply text-2xl lg:text-3xl;
+            @apply text-xl lg:text-2xl;
         }
 
         tr:nth-child(even) {

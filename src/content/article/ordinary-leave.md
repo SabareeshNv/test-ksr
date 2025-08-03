@@ -4,7 +4,7 @@ malayalamTitle: സ്വാഭാവിക അവധി
 description: KSR അംഗീകരിച്ച രണ്ടു തരാം ലീവുകളിലുള്ള ഒന്നാണ് സ്വാഭാവിക അവധി. ഏതൊക്കെയാണ് സ്വാഭാവിക അവധികൾ എന്നും അതിന്റെ പ്രത്യേകതകൾ എന്തെന്നും നമ്മുക്ക് മനസിലാക്കാം.
 summary: "ഒരു സർക്കാർ ഉദ്യോഗസ്ഥൻ അയാളുടെ ഡ്യൂട്ടി അല്ലെങ്കിൽ സേവനത്തിന് ആനുപാതികമായി നേടിയ അവധികളേക്കുറിച്ചു ഉള്ള ഒരു ചെറു ലേഖനം. ഏതൊക്കെയാണ് സ്വാഭാവിക അവധികൾ എന്നും അതിന്റെ പ്രത്യേകതകൾ എന്തെന്നും നമ്മുക്ക് മനസിലാക്കാം."
 pubDate: "2020-12-01"
-coverImage: "../../assets/images/articles/ordinary_leave/ordinary_leave.png"
+coverImage: "@images/articles/ordinary_leave/ordinary_leave.png"
 coverAlt: "An illustration of Ordinary Leave"
 tags: ["Ordinary Leave", "Leave"]
 ---
