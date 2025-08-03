@@ -30,19 +30,27 @@ popularPost: true
 
 ആർജിത അവധി നേടുന്നതിന്റെ നിരക്ക് മാറുമ്പോഴെല്ലാം, മുമ്പത്തെ നിരക്കിൽ ശേഖരിക്കപ്പെട്ട/സമ്പാദിച്ച അവധിയിലെ ഭിന്നസംഖ്യ (fraction) അടുത്തുള്ള ദിവസത്തിലേക്ക് മാറ്റണം. അങ്ങനെ മാറ്റുമ്പോൾ, പകുതിക്ക് താഴെയുള്ള ഭിന്നസംഖ്യ അവഗണിക്കണം, പകുതിയോ അതിൽ കൂടുതലോ ഉള്ള ഭിന്നസംഖ്യ ഒരു ദിവസമായി കണക്കാക്കുകയും ചെയ്യണം.
 
-1. ഉദ്യോഗത്തിലെ ആദ്യ വർഷം 22 ദിവസങ്ങൾക്ക് 1 അവധി എന്ന കണക്കിലാണ് ആർജിത അവധി നിശ്ചയിക്കുന്നത്.
-    > <span class="math"> <is-fraction>365&frasl;22</is-fraction> = <is-fraction>16 13&frasl;22</is-fraction></span>അതായത് 17 എണ്ണം. <br>
-    > ഭിന്നസംഖ്യ <span class="math"><is-fraction>13&frasl;22</is-fraction> = 0.59</span> എന്നത് 0.5 ക്ക് മുകളിലാണ്. അപ്പോൾ അത് 1 ആയി കണക്കാക്കും. അങ്ങനെ <span class="math">16 + 1 = 17</span> അവധി.
+1. 22 ദിവസങ്ങൾക്ക് 1 അവധി എന്ന കണക്കിലാണ് ഉദ്യോഗത്തിലെ ആദ്യ വർഷം ആർജിത അവധി അനുവദിക്കുന്നത്.
+    > <sup>365</sup>&frasl;<sub>22</sub> = 16 <sup>13</sup>&frasl;<sub>22</sub>
+    >
+    > ഭിന്നസംഖ്യ <sup>13</sup>&frasl;<sub>22</sub> = 0.59; എന്നത് 0.5 ക്ക് മുകളിൽ ആയതിനാൽ അതിനെ 1 ആയി ആണ് നിശ്ചയിക്കുന്നത്. അങ്ങനെ 16 + 1 = 17 ആർജിത അവധി ആദ്യ വർഷം.
 
-2. രണ്ടാം വർഷം 11 ദിവസങ്ങൾക്ക് 1 അവധി എന്ന കണക്കിലാണ് ആർജിത അവധി. 
-    > <span class="math"><is-fraction>365&frasl;11</is-fraction> = <is-fraction>33 2&frasl;11</is-fraction> </span> അതായത് 33 എണ്ണം.<br>
-    > ഭിന്നസംഖ്യ <span class="math"><is-fraction>2&frasl;11</is-fraction> = 0.18</span> എന്നത് 0.5 ക്ക് താഴെ ആയതിനാൽ അത് അവഗണിക്കുന്നു.<br>
-    > 
-    > 2 വർഷങ്ങളും ചേർത്ത്:<br>
-    > <span class="math"><is-fraction>365&frasl;22</is-fraction> + <is-fraction>365&frasl;11</is-fraction> = <is-fraction>16 13&frasl;22</is-fraction> + <is-fraction>33 2&frasl;11</is-fraction> = <is-fraction>49 17&frasl;22</is-fraction></span> അതായത് 50 എണ്ണം.
+2. 11 ദിവസങ്ങൾക്ക് 1 അവധി എന്ന കണക്കിലാണ് രണ്ടാം വർഷം മുതൽ ആർജിത അവധി അനുവദിക്കുന്നത്.
+    > <sup>365</sup>&frasl;<sub>11</sub> = 33 2&frasl;11
+    >
+    > ഭിന്നസംഖ്യ 2&frasl;11 = 0.18; എന്നത് 0.5 ക്ക് താഴെ ആയതിനാൽ അത് അവഗണിക്കുന്നു. അങ്ങനെ 33 2&frasl;11 എന്നത് 33 അവധി മാത്രമാകുന്നു.
+    
+    
+    > ആദ്യ വർഷത്തേതും രണ്ടാമത്തേതും കൂടി കൂട്ടിയാൽ: <br>
+    > 365&frasl;22 + 365&frasl;11 = 16 13&frasl;22 + 33 2&frasl;11 = 49 17&frasl;22
+    >
+    > 17&frasl;22 = 0.77 ആയതിനാൽ അതിനെ 1 ആയി കണക്കാക്കുന്നു.<br>
+    > അങ്ങനെ 49 17&frasl;22 എന്നത് 50 അവധിയാവും.
+    
 
-3. മൂന്നാം വർഷം 11 ന് 1 എന്ന കണക്കിൽ കിട്ടുന്ന ആർജിത അവധിക്ക് പുറമെ ആദ്യ വർഷത്തെ റെഗുലറൈസ് ചെയ്തു കിട്ടിയ ബാക്കിയെണ്ണം അവധികൾ കൂടെ ചേരും അക്കൗണ്ടിൽ. 
-    > <span class="math"><is-fraction>365&frasl;22</is-fraction> + <is-fraction>365&frasl;11</is-fraction>+ <is-fraction>365&frasl;11</is-fraction> + <is-fraction>365&frasl;22</is-fraction> = <is-fraction>16 13&frasl;22</is-fraction> + <is-fraction>33 2&frasl;11</is-fraction> + <is-fraction>33 2&frasl;11</is-fraction> + <is-fraction>16 13&frasl;22</is-fraction> = <is-fraction>99 6&frasl;11</is-fraction></span> അതായത് 100 എണ്ണം.
+3. മൂന്നാം വർഷം — 11 ന് 1 എന്ന കണക്കിൽ കിട്ടുന്ന ആർജിത അവധിക്ക് പുറമെ ആദ്യ വർഷത്തെ റെഗുലറൈസ് (regularize) ചെയ്തു കിട്ടിയ ബാക്കിയെണ്ണം അവധികൾ കൂടെ ചേരും അക്കൗണ്ടിൽ. 
+    > 365&frasl;22 + 365&frasl;11 + 365&frasl;11 + 365&frasl;22 = 16 13&frasl;22 + 33 2&frasl;11 + 33 2&frasl;11 + 16 13&frasl;22 = 99 6&frasl;11 <br>
+    > അതായത് 100 അവധികൾ.
 
 ## Earned Leave Allowances
 
@@ -58,10 +66,10 @@ popularPost: true
 
 അവധിക്കാല ജീവനക്കാരുടെ ആർജിത അവധി കാണാൻ ഉപയോഗിക്കുന്ന സമവാക്യം:
 
-> Number of Earned Leave = <span class="math"><sup>N</sup>&frasl;<sub>V</sub> x 30</span>
+> Number of Earned Leave = <sup>N</sup>&frasl;<sub>V</sub> x 30
 >
-> _N = എത്ര ദിവസം ഡ്യൂട്ടി ചെയ്തു അവധിക്കാലത്ത്._ <br/>
-> _V = എത്ര ദിവസം ഉണ്ട് അവധിക്കാലം._
+> N = എത്ര ദിവസം ഡ്യൂട്ടി ചെയ്തു അവധിക്കാലത്ത്.<br>
+> V = എത്ര ദിവസം ഉണ്ട് അവധിക്കാലം.
 
 ## Earned Leave Surrender
 

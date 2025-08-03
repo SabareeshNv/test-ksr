@@ -65,16 +65,4 @@
         }
 
     }
-
-    /* For styling fractions in markdown file */
-    .math {
-        @apply text-xl lg:text-2xl;
-    }
-
-    is-fraction {
-        @apply text-xl lg:text-2xl;
-    }
-
-    /* Fraction styling ends */
-
 }
