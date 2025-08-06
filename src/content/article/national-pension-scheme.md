@@ -1,8 +1,8 @@
 ---
 title: National Pension Scheme
 malayalamTitle: ദേശീയ പെൻഷൻ പദ്ധതി
-description: All about NPS, the new Pension Sytem for Kerala Government Service Members.
-summary: "ദേശീയ പെൻഷൻ പദ്ധതി (എൻ‌പി‌എസ്) സർക്കാർ ജീവനക്കാർക്കായി ഒരു ഫലപ്രദമായ വിരമിക്കൽ ആസൂത്രണ ഉപകരണമാണ്. എൻ‌പി‌എസ് പരമ്പരാഗത പെൻഷൻ പദ്ധതികളിൽ നിന്ന് വ്യത്യസ്തമാണ്, ഇത് നിങ്ങളുടെ നിക്ഷേപത്തെ ആശ്രയിച്ചുള്ള ഒരു പെൻഷൻ നൽകുന്നു. ഈ പദ്ധതിയേക്കുറിച്ചു കൂടുതൽ മനസിലാക്കാൻ ഈ ലേഖനം സഹായിക്കും."
+description: ദേശീയ പെൻഷൻ പദ്ധതിയെക്കുറിച്ചു ഒരു വിശദീകരണം. An explanation of NPS for Kerala Government employees
+summary: "ദേശീയ പെൻഷൻ പദ്ധതിയെക്കുറിച്ചു ഒരു വിശദീകരണം."
 pubDate: "2020-10-20"
 coverImage: "@images/articles/nps/nps.png"
 coverAlt: "An illustration for National Pension Scheme"

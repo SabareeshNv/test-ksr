@@ -2,7 +2,7 @@
 title: Earned Leave
 malayalamTitle: ആർജിത അവധി
 description: An article about Earned Leave in KSR | ആർജിത അവധിയേ കുറിച്ച് ഒരു ലേഖനം
-summary: "നിശ്ചിത കാലയളവിലെ സേവനത്തിന് ആനുപാതികമായി ലഭിക്കുന്ന അവധിയായ ആർജിത അവധിയെക്കുറിച്ചു ഒരു വിശദീകരണം."
+summary: "നിശ്ചിത കാലയളവിലെ സേവനത്തിന് ആനുപാതികമായി ലഭിക്കുന്ന അവധിയായ ആർജിത അവധിയെക്കുറിച്ചു ഒരു വിവരണം."
 pubDate: "2020-12-08"
 coverImage: "@images/articles/earned_leave/earned_leave.png"
 coverAlt: "earned leave poster"
