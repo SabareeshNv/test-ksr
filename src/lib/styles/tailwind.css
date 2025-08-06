@@ -103,7 +103,6 @@ img {
     --font-manjari: 'Manjari', 'Alegreya Sans', ui-sans-serif, system-ui, sans-serif;
     --font-alegreya-sans: 'Alegreya Sans', ui-sans-serif, system-ui, sans-serif;
     --color-dark: #000000e6;
-    /* --color-brand: #ef4444; */
     --color-brand: rgb(153 27 27);
     --color-brand-bright: rgb(239 68 68);
 }

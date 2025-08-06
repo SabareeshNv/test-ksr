@@ -1,0 +1,25 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+
+const title = "404 Error - Page Not found | KeralaServiceRules.com";
+const description = "Page Not found | KeralaServiceRules.com";
+---
+
+<BaseLayout {title} {description}>
+    <main class="wrapper my-8">
+        <div class="max-w-sm text-center text-xl lg:text-2xl">
+            <h1 class="text-2xl lg:text-3xl mb-4 font-bold">
+                We couldn't find what you are looking for.
+            </h1>
+            <p>
+                You may check our
+                <a
+                    href="/"
+                    class="text-brand underline underline-offset-4 decoration-2"
+                    >Homepage</a
+                >
+                and see if you can find what you are looking for.
+            </p>
+        </div>
+    </main>
+</BaseLayout>
