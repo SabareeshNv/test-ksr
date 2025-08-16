@@ -22,15 +22,15 @@ popularPost: true
 -   8 കിലോമീറ്ററിന് ഉള്ളിലുള്ള സ്ഥലം മാറ്റത്തിന് ⟶ 1 ദിവസം പ്രവേശന കാലമായി ലഭിക്കുന്നതാണ് (KSR Part 1 Rule 126)
 -   8 കിലോമീറ്ററിന് മുകളിൽ ഉള്ള സ്ഥലത്തേക്ക് ആണ് മാറ്റമെങ്കിൽ ⟶ 6 ദിവസം തയ്യാറെടുപ്പ് സമയവും (preparation time) + യാത്രാ കാലവും (actual journey time) ചേർന്നുള്ളതായിരിക്കും പ്രവേശനകാലം. പരമാവധി അനുവദിക്കാവുന്നത് 30 ദിവസം ആണ്. (KSR Part 1 Rule 127)
 
-### Actual Journey Time calculations:
-_A day is also allowed for any fractional portion of any distance
-prescribed_
+## Actual Journey Time calculations:
+
+_യാത്രാ കാലം കണക്കാക്കാൻ ഭിന്ന സംഖ്യകളെ ഒരു ദിവസമായി ആണ് പരിഗണിക്കുന്നത്_
 
 | Journey By                        | Distance | Journey Time           |
 |-----------------------------------|----------|--------------          |
 | Aircraft                          |          | Actual time occupied   |
-| Railway                           |500km     | One day for each       |
-| Ocean Steamer                     |350km     | One day for each       |
-| River Steamer                     |150km     | One day for each       |
-| Motor Vehicle                     |150km     | One day for each       |
-| conveyance plying for public hire |25km      | One day for each       |
+| Railway                           |500km     | 1 ദിവസം വീതം      |
+| Ocean Steamer                     |350km     | 1 ദിവസം വീതം      |
+| River Steamer                     |150km     | 1 ദിവസം വീതം      |
+| Motor Vehicle                     |150km     | 1 ദിവസം വീതം      |
+| conveyance plying for public hire |25km      | 1 ദിവസം വീതം      |
