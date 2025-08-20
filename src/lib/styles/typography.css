@@ -4,13 +4,12 @@
     @apply prose prose-lg lg:prose-xl text-dark marker:text-dark;
     @apply prose-headings:text-xl lg:prose-headings:text-2xl xl:prose-headings:text-3xl;
     @apply prose-a:underline prose-a:underline-offset-4 prose-a:decoration-2 prose-a:text-brand;
-    @apply leading-relaxed;
 
     max-width: 75ch;
     overflow-wrap: break-word;
     /* So long texts don't cause overflow */
     word-spacing: 0.1rem;
-    
+
     h1,
     h2,
     h3,
