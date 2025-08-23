@@ -1,0 +1,13 @@
+{
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "[markdown]": {
+        "editor.fontSize": 20,
+        "editor.fontFamily": "Meera",
+        "editor.lineNumbers": "off", // Example: Turn off line numbers for Markdown
+        "editor.rulers": [
+            80,
+            120
+        ]
+    }
+}
