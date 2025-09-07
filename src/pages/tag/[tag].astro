@@ -17,7 +17,7 @@ export async function getStaticPaths() {
 
   return tagData.map((tag) => {
     const taggedPosts = posts.filter((post) =>
-      post.data.tags.includes(tag.name),
+      post.data.tags.includes(tag.name)
     );
 
     return {
@@ -39,7 +39,7 @@ const description = `Articles about ${tag} | KeralaServiceRules.com`;
     <main>
       <h1 class="heading text-2xl italic lg:text-3xl">
         Articles about
-        <span class="text-brand font-bold not-italic"
+        <span class="text-brand font-bold"
           >&nbsp; {`" ${unslugify(tag)} "`}</span
         >
       </h1>
