@@ -11,25 +11,23 @@ const posts = await fetchAndFilterPosts();
 
 const title = "All our Articles | KeralaServiceRules.com";
 const description =
-    "Here are all our articles published | KeralaServiceRules.com";
+  "Here are all our articles published | KeralaServiceRules.com";
 ---
 
 <BaseLayout {title} {description}>
-    <div class="wrapper page-columns my-8">
-        <main class="auto-grid">
-            {
-                /* First 2 images should not be lazy loaded to please Google */
-                posts
-                    .slice(0, 2)
-                    .map((post) => <Card {post} aboveFold={true} />)
-            }
-            {posts.slice(2).map((post) => <Card {post} />)}
-        </main>
-        <aside>
-            <SearchField />
-            <UsefulLinks />
-            <PopularPosts />
-            <TagCloud />
-        </aside>
-    </div>
+  <div class="wrapper page-columns my-8">
+    <main class="auto-grid">
+      {
+        /* First 2 images should not be lazy loaded to please Google */
+        posts.slice(0, 2).map((post) => <Card {post} aboveFold={true} />)
+      }
+      {posts.slice(2).map((post) => <Card {post} />)}
+    </main>
+    <aside>
+      <SearchField />
+      <UsefulLinks />
+      <PopularPosts />
+      <TagCloud />
+    </aside>
+  </div>
 </BaseLayout>

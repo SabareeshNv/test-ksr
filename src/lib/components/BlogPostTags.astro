@@ -1,6 +1,6 @@
 ---
 interface Props {
-    tags: string[];
+  tags: string[];
 }
 
 import { slugify } from "@utils/helper";
@@ -8,15 +8,15 @@ import { slugify } from "@utils/helper";
 const { tags } = Astro.props;
 ---
 
-<div class="flex flex-wrap gap-4 mt-12 lg:mt-16 mb-8 not-prose">
-    {
-        tags.map((tag) => (
-            <a
-                href={`/tag/${slugify(tag)}`}
-                class="p-2 text-base outline outline-dark rounded hover:bg-dark hover:text-gray-100 hover:outline-gray-100 focus:bg-dark focus:text-gray-100 focus:outline-gray-100 transition-colors"
-            >
-                {tag}
-            </a>
-        ))
-    }
+<div class="not-prose mt-12 mb-8 flex flex-wrap gap-4 lg:mt-16">
+  {
+    tags.map((tag) => (
+      <a
+        href={`/tag/${slugify(tag)}`}
+        class="outline-dark hover:bg-dark focus:bg-dark rounded p-2 text-base outline transition-colors hover:text-gray-100 hover:outline-gray-100 focus:text-gray-100 focus:outline-gray-100"
+      >
+        {tag}
+      </a>
+    ))
+  }
 </div>

@@ -1,36 +1,36 @@
 ---
 const footer = [
-    { text: "Privacy Policy", link: "/privacy-policy" },
-    { text: "RSS Feed", link: "/feed.xml" },
-    { text: "Content Policy", link: "/content-policy" },
+  { text: "Privacy Policy", link: "/privacy-policy" },
+  { text: "RSS Feed", link: "/feed.xml" },
+  { text: "Content Policy", link: "/content-policy" },
 ];
 
 function getCurrentYear() {
-    return new Date().getFullYear();
+  return new Date().getFullYear();
 }
 ---
 
 <footer class="bg-dark py-8 text-gray-100">
-    <div class="wrapper grid gap-6 md:gap-2 md:grid-cols-3">
-        <ul
-            class="md:col-span-2 flex items-center justify-evenly md:justify-normal gap-6 md:gap-8"
-        >
-            {
-                footer.map((item) => (
-                    <li>
-                        <a
-                            href={item.link}
-                            class="hover:text-brand-bright transition-colors"
-                        >
-                            {item.text}
-                        </a>
-                    </li>
-                ))
-            }
-        </ul>
+  <div class="wrapper grid gap-6 md:grid-cols-3 md:gap-2">
+    <ul
+      class="flex items-center justify-evenly gap-6 md:col-span-2 md:justify-normal md:gap-8"
+    >
+      {
+        footer.map((item) => (
+          <li>
+            <a
+              href={item.link}
+              class="hover:text-brand-bright transition-colors"
+            >
+              {item.text}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
 
-        <div class="text-center md:text-right">
-            Copyright © 2020 - {getCurrentYear}
-        </div>
+    <div class="text-center md:text-right">
+      Copyright © 2020 - {getCurrentYear}
     </div>
+  </div>
 </footer>

@@ -1,7 +1,7 @@
 ---
 interface Props {
-    title: string;
-    description: string;
+  title: string;
+  description: string;
 }
 
 import "@styles/tailwind.css";
@@ -47,8 +47,8 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 {/* For RSS Autodiscovery - https://docs.astro.build/en/guides/rss/  */}
 <link
-    rel="alternate"
-    type="application/rss+xml"
-    title="Kerala Service Rules - Latest Posts | KeralaServiceRules.com"
-    href={new URL("feed.xml", Astro.site)}
+  rel="alternate"
+  type="application/rss+xml"
+  title="Kerala Service Rules - Latest Posts | KeralaServiceRules.com"
+  href={new URL("feed.xml", Astro.site)}
 />

@@ -12,13 +12,13 @@ import PopularPosts from "@components/PopularPosts.astro";
 
 type Props = CollectionEntry<"article">["data"];
 const {
-    title,
-    malayalamTitle,
-    description,
-    pubDate,
-    coverImage,
-    coverAlt,
-    tags,
+  title,
+  malayalamTitle,
+  description,
+  pubDate,
+  coverImage,
+  coverAlt,
+  tags,
 } = Astro.props;
 
 const titleSEO = `${title} | KeralaServiceRules.com`;
@@ -26,33 +26,33 @@ const descSEO = `${description} | KeralaServiceRules.com`;
 ---
 
 <BaseLayout title={titleSEO} description={descSEO}>
-    <main data-pagefind-body>
-        <section class="wrapper page-columns mt-4">
-            <div>
-                <Hero {title} {malayalamTitle} {pubDate} />
-                <Image
-                    src={coverImage}
-                    alt={coverAlt}
-                    loading={"eager"}
-                    fetchpriority={"high"}
-                    decoding={"sync"}
-                    quality={"max"}
-                    class="mt-4 w-full rounded shadow"
-                />
-            </div>
-        </section>
-        <div class="wrapper page-columns my-6">
-            <article>
-                <div class="typography font-manjari">
-                    <slot />
-                    <BlogPostTags tags={tags} />
-                </div>
-            </article>
-            <aside data-pagefind-ignore="all">
-                <SearchField />
-                <PopularPosts />
-                <TagCloud />
-            </aside>
+  <main data-pagefind-body>
+    <section class="wrapper page-columns mt-4">
+      <div>
+        <Hero {title} {malayalamTitle} {pubDate} />
+        <Image
+          src={coverImage}
+          alt={coverAlt}
+          loading={"eager"}
+          fetchpriority={"high"}
+          decoding={"sync"}
+          quality={"max"}
+          class="mt-4 w-full rounded shadow"
+        />
+      </div>
+    </section>
+    <div class="wrapper page-columns my-6">
+      <article>
+        <div class="typography font-manjari">
+          <slot />
+          <BlogPostTags tags={tags} />
         </div>
-    </main>
+      </article>
+      <aside data-pagefind-ignore="all">
+        <SearchField />
+        <PopularPosts />
+        <TagCloud />
+      </aside>
+    </div>
+  </main>
 </BaseLayout>

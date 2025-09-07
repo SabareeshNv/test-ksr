@@ -1,17 +1,17 @@
 // @ts-check
-import { defineConfig } from 'astro/config';
-import tailwindcss from '@tailwindcss/vite';
+import { defineConfig } from "astro/config";
+import tailwindcss from "@tailwindcss/vite";
 import pagefind from "astro-pagefind";
-import sitemap from '@astrojs/sitemap';
+import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-    site: "https://test-ksr.netlify.app",
-    build: {
-        assets: "_assets",
-    },
-    vite: {
-        plugins: [tailwindcss()],
-    },
-    integrations: [sitemap(), pagefind()],
+  site: "https://test-ksr.netlify.app",
+  build: {
+    assets: "_assets",
+  },
+  vite: {
+    plugins: [tailwindcss()],
+  },
+  integrations: [sitemap(), pagefind()],
 });

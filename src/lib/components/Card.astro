@@ -8,9 +8,9 @@ const { title, pubDate, summary, coverImage, coverAlt } = post.data;
 
 <article>
   <h2>
-    <a href={`/article/${post.id}/`} class="text-3xl font-bold">{title}</a>
+    <a href={`/article/${post.id}/`} class="text-2xl font-bold">{title}</a>
   </h2>
-  <Date date={pubDate} class="md:text-lg lg:text-xl mt-2" />
+  <Date date={pubDate} class="mt-2" />
   <div class="mt-4">
     <a href={`/article/${post.id}/`}>
       {
@@ -28,9 +28,7 @@ const { title, pubDate, summary, coverImage, coverAlt } = post.data;
         )
       }
     </a>
-    <div
-      class="font-manjari lg:text-lg mt-4 [word-spacing:0.2rem] leading-snug"
-    >
+    <div class="font-manjari mt-4 leading-snug [word-spacing:0.2rem]">
       {summary}
     </div>
   </div>

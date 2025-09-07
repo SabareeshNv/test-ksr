@@ -2,37 +2,37 @@
 import SectionHeading from "./SectionHeading.astro";
 
 const usefulLinks = [
-    { text: "Govt. of Kerala Website", link: "https://kerala.gov.in/" },
-    { text: "Spark Website", link: "https://www.spark.gov.in/webspark/" },
-    { text: "Medisep Website", link: "https://medisep.kerala.gov.in/" },
-    { text: "Kerala PSC Website", link: "https://www.keralapsc.gov.in/" },
-    {
-        text: "Departmental Test Website",
-        link: "https://www.keralapsc.gov.in/departmental-test",
-    },
-    {
-        text: "Kerala PSC Thulasi",
-        link: "https://thulasi.psc.kerala.gov.in/thulasi/",
-    },
+  { text: "Govt. of Kerala Website", link: "https://kerala.gov.in/" },
+  { text: "Spark Website", link: "https://www.spark.gov.in/webspark/" },
+  { text: "Medisep Website", link: "https://medisep.kerala.gov.in/" },
+  { text: "Kerala PSC Website", link: "https://www.keralapsc.gov.in/" },
+  {
+    text: "Departmental Test Website",
+    link: "https://www.keralapsc.gov.in/departmental-test",
+  },
+  {
+    text: "Kerala PSC Thulasi",
+    link: "https://thulasi.psc.kerala.gov.in/thulasi/",
+  },
 ];
 ---
 
 <section class="mb-8">
-    <SectionHeading heading="Useful Websites" />
-    <ul class="mt-4 list-disc pl-6">
-        {
-            usefulLinks.map((item) => (
-                <li class="pb-4">
-                    <a
-                        href={`${item.link}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="text-lg hover:underline"
-                    >
-                        {item.text}
-                    </a>
-                </li>
-            ))
-        }
-    </ul>
+  <SectionHeading heading="Useful Websites" />
+  <ul class="mt-4 list-disc pl-6">
+    {
+      usefulLinks.map((item) => (
+        <li class="pb-4">
+          <a
+            href={`${item.link}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:underline lg:text-lg"
+          >
+            {item.text}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
 </section>

@@ -5,26 +5,23 @@ import SectionHeading from "./SectionHeading.astro";
 const posts = await fetchAndFilterPosts();
 const popularPosts = [];
 for (let i = 0; i < posts.length; i++) {
-    if (posts[i].data.popularPost == true) {
-        popularPosts.push(posts[i]);
-    }
+  if (posts[i].data.popularPost == true) {
+    popularPosts.push(posts[i]);
+  }
 }
 ---
 
 <section class="mb-8">
-    <SectionHeading heading="Popular Posts" />
-    <ul class="mt-4 list-disc pl-6">
-        {
-            popularPosts.map((post) => (
-                <li class="pb-4">
-                    <a
-                        href={`/article/${post.id}`}
-                        class="hover:underline md:text-lg"
-                    >
-                        {post.data.title}
-                    </a>
-                </li>
-            ))
-        }
-    </ul>
+  <SectionHeading heading="Popular Posts" />
+  <ul class="mt-4 list-disc pl-6">
+    {
+      popularPosts.map((post) => (
+        <li class="pb-4">
+          <a href={`/article/${post.id}`} class="hover:underline lg:text-lg">
+            {post.data.title}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
 </section>
