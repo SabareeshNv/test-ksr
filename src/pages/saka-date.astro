@@ -1,0 +1,48 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+
+const title = "Gregorian to Saka Calendar Converter | KeralaServiceRules.com";
+const description =
+  "Gregorian to Saka Calendar Converter | KeralaServiceRules.com";
+---
+
+<BaseLayout {title} {description}>
+  <main class="wrapper py-6">
+    <div
+      class="mx-auto grid max-w-screen-xl gap-8 rounded-lg px-8 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32"
+    >
+      <div class="space-y-2">
+        <h1 class="text-3xl leading-tight font-bold md:text-4xl">
+          Convert Gregorian Date into Saka Calendar Date
+        </h1>
+        <p class="mt-4 text-lg lg:mt-8">
+          Saka Calendar is the Official National Calendar of India, and as such
+          is used in Government Gazettes and Court Judgements.
+        </p>
+      </div>
+
+      <div class="flex flex-col">
+        <span class="mb-6 text-2xl">Select or Enter a Gregorian Date</span>
+        <input type="date" id="gregorian-date" class="mb-6 p-2.5 font-sans" />
+
+        <button
+          type="submit"
+          id="btn-convert"
+          class="bg-brand hover:bg-brand/95 focus:bg-brand/95 w-full rounded p-3 text-sm font-bold tracking-wide text-white uppercase"
+          >Convert</button
+        >
+
+        <div id="result" class="mt-4 font-sans text-2xl"></div>
+      </div>
+    </div>
+  </main>
+</BaseLayout>
+
+<script>
+  import { convertToSaka } from "@utils/saka-date";
+
+  const btn = document.getElementById("btn-convert");
+  btn?.addEventListener("click", () => {
+    convertToSaka();
+  });
+</script>
