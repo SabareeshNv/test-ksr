@@ -29,9 +29,9 @@ const description =
           type="date"
           name="gregorian-date"
           id="gregorian-date"
-          value="2025-12-25"
+          value="2025-01-01"
           onfocus="this.value=''"
-          onblur="if(this.value==''){this.value='2025-12-25'}"
+          onblur="if(this.value==''){this.value='2025-01-01'}"
           class="mb-6 w-full p-2.5 font-sans"
         />
 
@@ -42,7 +42,7 @@ const description =
           >Convert</button
         >
 
-        <div id="result" class="mt-4 font-sans text-2xl"></div>
+        <div id="result" class="mt-4 font-sans text-2xl font-bold italic"></div>
       </div>
     </div>
   </main>
@@ -51,14 +51,14 @@ const description =
 <script>
   import { convertToSaka } from "@utils/saka-date";
 
-  // const today = new Date();
-  // const day = String(today.getDate()).padStart(2, "0");
-  // const month = String(today.getMonth() + 1).padStart(2, "0"); // Months are 0-indexed, so we add 1
-  // const year = today.getFullYear();
-  // const formattedValue = `${year}-${month}-${day}`;
+  const today = new Date();
+  const day = String(today.getDate()).padStart(2, "0");
+  const month = String(today.getMonth() + 1).padStart(2, "0"); // Months are 0-indexed, so we add 1
+  const year = today.getFullYear();
+  const formattedValue = `${year}-${month}-${day}`;
 
-  // const dateInput = document.getElementById("gergorian-date");
-  // dateInput.value = today;
+  const dateInput = document.getElementById("gregorian-date");
+  dateInput.value = formattedValue;
 
   const btn = document.getElementById("btn-convert");
   btn?.addEventListener("click", () => {
