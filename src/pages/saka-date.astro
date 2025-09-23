@@ -22,8 +22,18 @@ const description =
       </div>
 
       <div class="flex flex-col">
-        <span class="mb-6 text-2xl">Select or Enter a Gregorian Date</span>
-        <input type="date" id="gregorian-date" class="mb-6 p-2.5 font-sans" />
+        <label class="mb-6 text-2xl" for="gregorian-date"
+          >Select or Enter a Gregorian Date</label
+        >
+        <input
+          type="date"
+          name="gregorian-date"
+          id="gregorian-date"
+          value="2025-12-25"
+          onfocus="this.value=''"
+          onblur="if(this.value==''){this.value='2025-12-25'}"
+          class="mb-6 w-full p-2.5 font-sans"
+        />
 
         <button
           type="submit"
@@ -40,6 +50,15 @@ const description =
 
 <script>
   import { convertToSaka } from "@utils/saka-date";
+
+  // const today = new Date();
+  // const day = String(today.getDate()).padStart(2, "0");
+  // const month = String(today.getMonth() + 1).padStart(2, "0"); // Months are 0-indexed, so we add 1
+  // const year = today.getFullYear();
+  // const formattedValue = `${year}-${month}-${day}`;
+
+  // const dateInput = document.getElementById("gergorian-date");
+  // dateInput.value = today;
 
   const btn = document.getElementById("btn-convert");
   btn?.addEventListener("click", () => {
