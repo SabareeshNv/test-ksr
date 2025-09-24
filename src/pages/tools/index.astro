@@ -1,0 +1,40 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import PopularPosts from "@components/PopularPosts.astro";
+import SearchField from "@components/SearchField.astro";
+import TagCloud from "@components/TagCloud.astro";
+import UsefulLinks from "@components/UsefulLinks.astro";
+
+const title =
+  "Useful Tools and Utilities for a productive job experience | KeralaServiceRules.com";
+const description =
+  "Useful Tools and Utilities for a productive job experience | KeralaServiceRules.com";
+---
+
+<BaseLayout {title} {description}>
+  <div class="wrapper page-columns my-8">
+    <main>
+      <h1 class="text-2xl font-bold lg:text-3xl">
+        Tools and Utilities to help you on your job.
+      </h1>
+      <p class="mt-4 max-w-[60ch] text-lg lg:text-xl">
+        Here are some simple tools and utilities to help with your job so that
+        you can make your work a breaze.
+      </p>
+
+      <ul class="mt-8 ml-10 list-decimal">
+        <li class="text-brand text-lg md:text-xl lg:text-2xl">
+          <a href="/tools/saka-date/"
+            >Date Converter &ndash; Convert To Saka Year</a
+          >
+        </li>
+      </ul>
+    </main>
+    <aside>
+      <SearchField />
+      <UsefulLinks />
+      <PopularPosts />
+      <TagCloud />
+    </aside>
+  </div>
+</BaseLayout>

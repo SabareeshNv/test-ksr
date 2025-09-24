@@ -2,13 +2,8 @@
 const footer = [
   { text: "Privacy Policy", link: "/privacy-policy" },
   { text: "RSS Feed", link: "/feed.xml" },
-  { text: "Saka Date Converter", link: "/saka-date" },
   { text: "Content Policy", link: "/content-policy" },
 ];
-
-function getCurrentYear() {
-  return new Date().getFullYear();
-}
 ---
 
 <footer class="bg-dark py-8 text-gray-100">
@@ -31,7 +26,13 @@ function getCurrentYear() {
     </ul>
 
     <div class="text-center md:text-right">
-      Copyright © 2020 - {getCurrentYear}
+      Copyright © 2020 - <span id="currentYear"></span>
     </div>
   </div>
 </footer>
+
+<script>
+  let currentYearSpan = document.getElementById("currentYear") as HTMLElement;
+  const currentYear = new Date().getFullYear();
+  currentYearSpan.innerHTML = currentYear;
+</script>

@@ -1,29 +1,27 @@
 ---
 import BaseLayout from "@layouts/BaseLayout.astro";
 
-const title = "Gregorian to Saka Calendar Converter | KeralaServiceRules.com";
+const title =
+  "Gregorian Calendar Date to Saka Calendar Date Converter | KeralaServiceRules.com";
 const description =
-  "Gregorian to Saka Calendar Converter | KeralaServiceRules.com";
+  "Gregorian Calendar Date to Saka Calendar Date Converter | KeralaServiceRules.com";
 ---
 
 <BaseLayout {title} {description}>
-  <main class="wrapper py-6">
-    <div
-      class="mx-auto mt-6 grid max-w-screen-lg gap-8 md:grid-cols-2 md:gap-10 md:px-12 lg:gap-12"
-    >
-      <div>
+  <main class="wrapper my-8">
+    <div class="mx-auto grid max-w-screen-md gap-8 md:grid-cols-2">
+      <section>
         <h1 class="text-3xl leading-tight font-bold md:text-4xl">
           Convert Gregorian Date into Saka Calendar Date
         </h1>
-        <p class="mt-4 text-lg lg:mt-8">
-          Saka Calendar is the Official National Calendar of India, and as such
-          is used in Government Gazettes and Court Judgements.
-        </p>
-      </div>
+        <span class="mt-4 block text-lg">
+          Select a date to convert into corresponding Saka Calendar date.
+        </span>
+      </section>
 
       <div class="flex flex-col">
-        <label class="font-alegreya-sans mb-6 text-2xl" for="gregorian-date"
-          >Select a Gregorian Date to convert</label
+        <label class="font-alegreya-sans mb-1 text-xl" for="gregorian-date"
+          >Pick a date</label
         >
         <input
           type="date"
