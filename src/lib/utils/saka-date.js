@@ -107,5 +107,5 @@ export function convertToSaka() {
   const weekday = weekdayNames[dateObj.getDay()];
 
   document.getElementById("result").innerText =
-    `${weekday}, ${sakaDate.day} ${sakaDate.month}, ${sakaDate.year} SE`;
+    `${weekday}, ${sakaDate.day} ${sakaDate.month}, ${sakaDate.year}`;
 }

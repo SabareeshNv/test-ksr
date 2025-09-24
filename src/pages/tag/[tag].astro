@@ -17,7 +17,7 @@ export async function getStaticPaths() {
 
   return tagData.map((tag) => {
     const taggedPosts = posts.filter((post) =>
-      post.data.tags.includes(tag.name)
+      post.data.tags.includes(tag.name),
     );
 
     return {
