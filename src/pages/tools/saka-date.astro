@@ -9,7 +9,7 @@ const description =
 
 <BaseLayout {title} {description}>
   <main class="wrapper my-8">
-    <div class="mx-auto grid max-w-screen-md gap-8 md:grid-cols-2">
+    <div class="mx-auto grid max-w-[800px] gap-8 md:grid-cols-2">
       <section>
         <h1 class="text-3xl leading-tight font-bold md:text-4xl">
           Convert Gregorian Date into Saka Calendar Date
@@ -20,8 +20,9 @@ const description =
       </section>
 
       <div class="flex flex-col">
-        <label class="font-alegreya-sans mb-1 text-xl" for="gregorian-date"
-          >Pick a date</label
+        <label
+          class="font-alegreya-sans mb-1 text-xl italic"
+          for="gregorian-date">Pick a date</label
         >
         <input
           type="date"
@@ -37,7 +38,10 @@ const description =
           >Convert</button
         >
 
-        <div id="result" class="mt-8 text-2xl font-bold lg:mt-10 lg:text-3xl">
+        <div
+          id="result"
+          class="mt-8 mb-6 text-2xl font-bold lg:mt-10 lg:text-3xl"
+        >
         </div>
       </div>
     </div>
