@@ -33,7 +33,9 @@ const footer = [
 </footer>
 
 <script>
-  let currentYearSpan = document.getElementById("currentYear") as HTMLElement;
+  //Get current Year and put it into the footer.
   const currentYear = new Date().getFullYear();
-  currentYearSpan.innerHTML = currentYear;
+
+  let currentYearSpan = document.getElementById("currentYear") as HTMLElement;
+  currentYearSpan.innerHTML = `${currentYear}`;
 </script>
