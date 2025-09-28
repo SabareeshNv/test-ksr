@@ -13,5 +13,16 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  integrations: [sitemap(), pagefind()],
+  integrations: [
+    // https://docs.astro.build/en/guides/integrations-guide/sitemap/
+    sitemap({
+      namespaces: {
+        xhtml: false,
+        news: false,
+        video: false,
+      },
+    }),
+    ,
+    pagefind(),
+  ],
 });
